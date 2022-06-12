@@ -41,6 +41,7 @@ class Dictator extends React.Component {
         const importantDates = dictator.importantDates;
         return (
             <div className="all-content" ref={this.container}>
+		<div className="scroller">
                 <div className='timeline-wrapper-2'>
                     <ul className='StepProgress'>
                     {importantDates && importantDates.map((importantDateObject, index) => (
@@ -52,7 +53,7 @@ class Dictator extends React.Component {
                     ))}
                     </ul>
                 </div>
-                <section className='page'>
+                <section>
                     <div className='dictator-content'>
                         <div className='title'>
                             <Link to="/"><h1 className='name'>{dictator.name}</h1></Link>
@@ -68,6 +69,7 @@ class Dictator extends React.Component {
                         <p dangerouslySetInnerHTML={{__html: importantDate.storyInnerHTML}}></p>
                     </section>
                 ))}
+		</div>
             </div>
         )
     }

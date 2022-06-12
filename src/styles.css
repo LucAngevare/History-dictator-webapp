@@ -196,6 +196,10 @@ section {
     color: #393b4a;
 }
 
+.page {
+    min-height: 810px;
+}
+
 h3 {
     color: white !important;
 }
@@ -220,7 +224,7 @@ h3 {
 }
 
 .timeline-wrapper-2 {
-    padding-left:80px;
+    padding-left:200px;
     min-width: 400px;
     font-size: 14px;
     position: fixed;
